@@ -12,7 +12,7 @@ def files
   end 
 
 def import 
-  Song.new_by_filename(@path)
+  Song.new_by_filename(files)
 end 
   
     
