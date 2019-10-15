@@ -7,8 +7,8 @@ def initialize(path)
 end 
 
 def files
-  Dir["#{path}/*.mp3"].each do |songs|
-    songs.split("/").last!
+  Dir["#{path}/*.mp3"].map do |songs|
+    songs.split("/").last
   end 
     
 end 
