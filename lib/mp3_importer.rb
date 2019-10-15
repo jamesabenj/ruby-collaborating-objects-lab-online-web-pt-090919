@@ -1,3 +1,4 @@
+require "pry"
 class MP3Importer
   
   attr_reader :path 
@@ -14,6 +15,7 @@ end
 
 def import 
 Song.new_by_filename(files)
+binding.pry
 end 
   
 
