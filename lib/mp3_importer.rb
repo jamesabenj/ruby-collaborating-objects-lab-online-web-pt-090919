@@ -14,8 +14,9 @@ def files
 end
 
 def import 
-Song.new_by_filename(files)
-binding.pry
+files.each do |file|
+  Song.new_by_filename(file)
+  end 
 end 
   
 
